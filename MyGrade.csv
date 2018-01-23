@@ -1,4 +1,4 @@
-ชื่อวิชา,หน่วยกิต,เกรด,,หน่วยกิตรวม,แต้มระดับคะแนน,เกรดเฉลี่ย
+﻿ชื่อวิชา,หน่วยกิต,เกรด,,หน่วยกิตรวม,แต้มระดับคะแนน,เกรดเฉลี่ย
 010123101   INTRODUCTION TO COMPUTER,1,A,,92,230.5,2.5
 010123102   PROGRAMMING FUNDAMENTALS,3,C+,,,,
 040203111   ENGINEERING MATHEMATICS I,3,C,,,,
@@ -39,3 +39,4 @@
 010123119   EMBEDDED SYSTEM DESIGN,3,C,,,,
 010123133   DISCRETE MATHEMATICS,3,C+,,,,
 080103016   ENGLISH CONVERSATION I,3,B,,,,
+,,,,,,

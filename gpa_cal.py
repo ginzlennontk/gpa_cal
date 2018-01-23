@@ -5,17 +5,24 @@ def main():
         readCSV = csv.reader(csvfile, delimiter=',')
         first_row = next(readCSV)
         credit_sum = 0
+        credit_temp = 0
         score_sum = 0
-
+        score_temp = 0
+        term = 0
         for row in readCSV:
             if(row[0] == ""):
+                term += 1
+                credit_sum += credit_temp
+                score_sum += score_temp
+                print("Term " ,term ," : GPA = " ,
+                      int(score_temp*100/credit_temp)/100,
+                      "\t| GPAX = " ,int(score_sum*100/credit_sum)/100)
+                credit_temp = 0
+                score_temp = 0
                 continue
-            credit_sum += int(row[1])
-            score_sum += tranform_grade_to_number(row[2]) * int(row[1])
-
-        print("all credit : ",credit_sum)
-        print("all score : ",score_sum)
-        print("GPAX : ", (int(score_sum*100/credit_sum)/100))
+                
+            credit_temp += int(row[1])
+            score_temp += tranform_grade_to_number(row[2]) * int(row[1])
 
 def tranform_grade_to_number(grade):
     return {
